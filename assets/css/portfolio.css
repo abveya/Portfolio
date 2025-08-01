@@ -91,13 +91,24 @@ nav .links li {
     color: #2E2E2E;
     border: 2px solid #2E2E2E;
     border-radius: 50%;
-    align-content: center;
     margin: 0px 8px;
     transition: all 0.5s ease;
     background-color: #fff;
     width: 40px;
     height: 40px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home .info a
+{
+    text-decoration: none;
+}
+.icons {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .Home .info i:hover {
@@ -397,11 +408,18 @@ footer a:hover {
         margin-right: 3px;
     }
 
-    .Home .info i
+    .icons 
     {
-        width: 33px ;
+        justify-content: center;
+    }
+
+    .Home .info .icons i 
+    {
+        font-size: 18px;
+        width: 33px;
         height: 33px;
-        text-align: center;
+        line-height: 35px;
+        justify-content: center;
     }
 
     .contact h1, 
