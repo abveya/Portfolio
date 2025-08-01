@@ -1,0 +1,515 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body {
+background-color: #FFF0F5;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 240, 245, 0.9);
+    z-index: 1000;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+nav .links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav .links li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2E2E2E;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #D63484;
+}
+
+.links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #D63484;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+.Home img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #D63484;
+    transition: transform 0.5s ease;
+}
+.Home img:hover {
+    transform: scale(1.05);
+}
+.Home {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding-top: 5%;
+    align-items: stretch;
+    padding-bottom: 50px;
+    margin-top: 80px;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    color: #2E2E2E;
+}
+.info p {
+    margin:20px 0px;
+}
+.info h1{
+    margin: 0px;
+    font-size: 35px;
+}
+
+.Home .info i {
+    font-size: 18px;
+    color: #2E2E2E;
+    border: 2px solid #2E2E2E;
+    border-radius: 50%;
+    align-content: center;
+    margin: 0px 8px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.Home .info i:hover {
+    background-color: #D63484;
+    color: white;
+    border-color: #D63484;
+    transform: scale(1.15);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Experience h1 ,
+.projects h1 {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 5px;
+    color:#000000;
+    
+}
+.ProfileANDEducation {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.ProfileANDEducation h3 {
+    color: #000000; 
+}
+.Experience .Skills,
+.About-me .profile,
+.About-me .education {
+    width: 40%;
+    background: #FFF0F5;
+    border-left: 5px solid #D63484;
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    font-size: 15px;
+    line-height: 1.6;
+    transition: transform 0.5s ease;
+}
+.Experience .Skills 
+{
+    background-color: #ffebf2;
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+}
+.Experience .Skills:hover,
+.About-me .profile:hover,
+.About-me .education:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px  #D63484;
+}
+.About-me {
+    background-color: #ffebf2;
+    padding-bottom: 50px;
+}
+
+.contact h1,
+.projects h1,
+.Experience h1,
+.About-me h1 {
+    color: #2E2E2E;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.contact h1::after,
+.projects h1::after,
+.Experience h1::after,
+.About-me h1::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #2E2E2E;
+    margin: 10px auto 0;
+    transition: width 0.3s;
+    border-radius: 10px;
+}  
+
+.contact h1:hover::after,
+.projects h1:hover::after,
+.Experience h1:hover::after,
+.About-me h1:hover::after{
+    width: 130px;
+}
+
+.About-me h2 ,
+.Skills h2{
+    text-align: center;
+    padding: 15px 0px;
+}
+.Experience {
+    padding-bottom: 50px;
+}
+
+.Skills h3 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+.Skills i {
+    padding-bottom: 30px;
+    padding-right: 15px;
+}
+.Skills .skill-row {
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 20px;
+}
+
+.projects 
+{
+    background-color: #ffebf2;
+    padding-bottom: 30px;
+}
+.projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 30px;
+    padding: 20px;
+}
+.projects-card .card a{
+    border-radius: 25px;
+    padding: 8px 16px;
+    margin: 15px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffd1e1;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    box-shadow: 0 12px 24px #fee1eb;
+    transition: transform 0.5s ease;
+    text-decoration: none;
+}
+.projects-card .card a:hover {
+    background-color: #a81e61;
+    transform: scale(1.08);
+    color: white;
+    box-shadow: 0 6px 15px #bc67908a;
+}
+.projects-card .card {
+    width: 260px;
+    background-color: #fff0f5;
+    border-radius: 30px;
+    border: 3px solid #fff0f5;
+    box-shadow: 0 12px 24px #ffe1eb;
+    text-align: center;
+    padding: 20px 15px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    line-height: 1.6;
+}
+.projects-card .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px #ffe1eb;
+}
+
+.projects-card .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+.projects-card .card h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+}
+.contact h1 {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.contact-info {
+text-align: center;
+    border: 1px solid #ffebf2;
+    border-radius: 40px;
+    width: 60%;
+    padding: 15px 10px;
+    background-color: #ffebf2;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+.contact-info a {
+    padding: 0px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2E2E2E;
+}
+.contact-info i {
+    padding-right: 10px;
+    color:#a81e61;
+}
+.contact-info:hover {
+    background-color: #fce6ed;
+    border-radius: 40px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+footer ul a {
+    text-decoration: none;
+    color: #000000;
+}
+footer li{
+    margin:0px 15px;
+    font-size: 19px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+footer a:hover {
+    color:  #D63484;
+    transition: color 0.3s ease;
+}
+.cta-buttons {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #D63484;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #a81e61;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width:320px) and (max-width:800px)
+{
+    nav .links ul 
+    {
+    gap: 11px;
+    }
+    .Home 
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info 
+    {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .Image img 
+    {
+        width: 240px;
+        height: 240px;
+    }
+
+    nav .links li 
+    {
+    font-size: 13px;
+    }
+
+    .info h1 
+    {
+    font-size: 25px;
+    }
+
+    .info p 
+    {
+    margin: 20px 31px 20px 23px;
+    font-size: 14px;
+    }
+    .btn
+    {
+        font-size: 11px;
+        margin-right: 3px;
+    }
+
+    .Home .info i
+    {
+        width: 33px ;
+        height: 33px;
+    }
+
+    .contact h1, 
+    .projects h1, 
+    .Experience h1, 
+    .About-me h1
+    {
+    font-size: 25px;
+    }
+
+    .contact h1:hover::after,
+    .projects h1:hover::after,
+    .Experience h1:hover::after,
+    .About-me h1:hover::after
+    {
+    width: 112px;
+    }
+
+    .ProfileANDEducation 
+    {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    }
+
+    .Experience .Skills, .About-me .profile, .About-me .education 
+    {
+        width: 69%;
+    }
+
+    .ProfileANDEducation p
+    {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .Skills .skill-row 
+    {
+    font-size: 13px;
+    }
+
+    .projects-card .card 
+    {
+    width: 230px;
+    }
+
+    .contact-info 
+    {
+    width: 83%;
+    }
+
+    .contact-info a 
+    {
+    padding: 0px 9px;
+    }
+
+    .contact {
+    height: 415px;
+    }
+
+    .contact {
+    justify-content: flex-start;
+    height: 276px;
+    padding-top: 34px;
+    }
+
+    .contact-info h3 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .cta-buttons
+    {
+        margin: 20px auto 30px;
+    }
+}
+
+@media (min-width:415px) and (max-width:800px)
+{
+     nav .links li 
+    {
+    font-size: 17px;
+    }
+
+        nav .links ul 
+    {
+    gap: 19px;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px)
+{
+    .info {
+    width: 40%;
+    }
+
+    .Home img
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    .contact-info h3 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+} 
