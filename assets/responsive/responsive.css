@@ -1,0 +1,182 @@
+
+@media (min-width:320px) and (max-width:800px)
+{
+    nav .links ul 
+    {
+    gap: 11px;
+    }
+    .Home 
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info 
+    {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .Image img 
+    {
+        width: 240px;
+        height: 240px;
+    }
+
+    nav .links li 
+    {
+    font-size: 13px;
+    }
+
+    .info h1 
+    {
+    font-size: 25px;
+    }
+
+    .info p 
+    {
+    margin: 20px 31px 20px 23px;
+    font-size: 14px;
+    }
+    .btn
+    {
+        font-size: 11px;
+        margin-right: 3px;
+    }
+
+    .icons 
+    {
+        justify-content: center;
+    }
+
+    .Home .info .icons i 
+    {
+        font-size: 18px;
+        width: 33px;
+        height: 33px;
+        line-height: 35px;
+        justify-content: center;
+    }
+
+    .contact h1, 
+    .projects h1, 
+    .Experience h1, 
+    .About-me h1
+    {
+    font-size: 25px;
+    }
+
+    .contact h1:hover::after,
+    .projects h1:hover::after,
+    .Experience h1:hover::after,
+    .About-me h1:hover::after
+    {
+    width: 112px;
+    }
+
+    .ProfileANDEducation 
+    {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    }
+
+    .Experience .Skills, .About-me .profile, .About-me .education 
+    {
+        width: 69%;
+    }
+
+    .ProfileANDEducation p
+    {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .Skills .skill-row 
+    {
+    font-size: 13px;
+    }
+
+    .projects-card .card 
+    {
+    width: 230px;
+    }
+
+    .contact-info 
+    {
+    width: 83%;
+    }
+
+    .contact-info a 
+    {
+    padding: 0px 9px;
+    font-size: 17px;
+    }
+
+    .contact {
+    height: 415px;
+    }
+
+    .contact {
+    justify-content: flex-start;
+    height: 276px;
+    padding-top: 34px;
+    }
+
+    .contact-info h3 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .cta-buttons
+    {
+        margin: 20px auto 30px;
+    }
+
+    .projects-card .card a {
+    margin: 15px 6px;
+    font-size: 13px;
+    }
+
+    .Skills .grid-skills
+    {
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width:415px) and (max-width:800px)
+{
+    nav .links li 
+    {
+    font-size: 17px;
+    }
+
+        nav .links ul 
+    {
+    gap: 19px;
+    }
+}
+
+@media (min-width:800px) and (max-width:1000px)
+{
+    .info {
+    width: 40%;
+    }
+
+    .Home img
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    .contact-info h3 
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+} 

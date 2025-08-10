@@ -29,7 +29,7 @@ nav .links li {
 
 .links a {
     text-decoration: none;
-    color: #2E2E2E;
+    color: #630023;
     transition: color 0.3s ease;
 }
 
@@ -133,8 +133,9 @@ nav .links li {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.ProfileANDEducation h3 {
-    color: #000000; 
+.ProfileANDEducation p
+{
+    color: #630023;
 }
 .Experience .Skills,
 .About-me .profile,
@@ -171,7 +172,7 @@ nav .links li {
 .projects h1,
 .Experience h1,
 .About-me h1 {
-    color: #2E2E2E;
+    color: #630023;
     text-align: center;
     padding-top: 40px;
 }
@@ -201,12 +202,13 @@ nav .links li {
 .Skills h2{
     text-align: center;
     padding: 15px 0px;
+    color: #630023;
 }
 .Experience {
     padding-bottom: 50px;
 }
 
-.Skills h3 {
+/* .Skills h3 {
     display: flex;
     justify-content: space-around;
     font-size: 16px;
@@ -219,6 +221,35 @@ nav .links li {
     display: flex;
     flex-direction:column;
     padding-bottom: 20px;
+} */
+
+.Skills .grid-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+}
+
+.Skills .skill {
+    padding: 4px;
+}
+
+.Skills .skill span {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: 500;
+}
+
+.Skills .progress {
+    background: #f1e1e9;
+    height: 9px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Skills .progress-bar {
+    background:linear-gradient(90deg, #d63484, #ff3d9e);
+    height: 100%;
 }
 
 .projects 
@@ -277,8 +308,17 @@ nav .links li {
 }
 .projects-card .card h2 {
     font-size: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 3px;
+    color: #630023;
 }
+
+.projects-card .card p
+{
+    font-size: 15px;
+    margin-bottom: 25px;
+    color: #630023;
+}
+
 .contact{
     display: flex;
     justify-content: center;
@@ -286,13 +326,14 @@ nav .links li {
     flex-direction: column;
     height: 550px;
 }
+
 .contact h1 {
     padding-bottom: 15px;
     text-align: center;
 }
 
 .contact-info {
-text-align: center;
+    text-align: center;
     border: 1px solid #ffebf2;
     border-radius: 40px;
     width: 60%;
@@ -301,18 +342,21 @@ text-align: center;
     display: flex;
     justify-content: center;
     line-height: 1.6;
-}
+} 
+
 .contact-info a {
     padding: 0px 50px;
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
-    color: #2E2E2E;
+    color: #630023;
 }
+
 .contact-info i {
     padding-right: 10px;
     color:#a81e61;
-}
+} 
+
 .contact-info:hover {
     background-color: #fce6ed;
     border-radius: 40px;
@@ -323,10 +367,12 @@ footer ul{
     justify-content: center;
     list-style: none;
 }
+
 footer ul a {
     text-decoration: none;
     color: #000000;
 }
+
 footer li{
     margin:0px 15px;
     font-size: 19px;
@@ -334,10 +380,12 @@ footer li{
     padding: 10px;
     padding-bottom: 20px;
 }
+
 footer a:hover {
     color:  #D63484;
     transition: color 0.3s ease;
 }
+
 .cta-buttons {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -361,179 +409,3 @@ footer a:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
-@media (min-width:320px) and (max-width:800px)
-{
-    nav .links ul 
-    {
-    gap: 11px;
-    }
-    .Home 
-    {
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: center;
-    }
-
-    .info 
-    {
-        width: 90%;
-        margin-top: 20px;
-    }
-
-    .Image img 
-    {
-        width: 240px;
-        height: 240px;
-    }
-
-    nav .links li 
-    {
-    font-size: 13px;
-    }
-
-    .info h1 
-    {
-    font-size: 25px;
-    }
-
-    .info p 
-    {
-    margin: 20px 31px 20px 23px;
-    font-size: 14px;
-    }
-    .btn
-    {
-        font-size: 11px;
-        margin-right: 3px;
-    }
-
-    .icons 
-    {
-        justify-content: center;
-    }
-
-    .Home .info .icons i 
-    {
-        font-size: 18px;
-        width: 33px;
-        height: 33px;
-        line-height: 35px;
-        justify-content: center;
-    }
-
-    .contact h1, 
-    .projects h1, 
-    .Experience h1, 
-    .About-me h1
-    {
-    font-size: 25px;
-    }
-
-    .contact h1:hover::after,
-    .projects h1:hover::after,
-    .Experience h1:hover::after,
-    .About-me h1:hover::after
-    {
-    width: 112px;
-    }
-
-    .ProfileANDEducation 
-    {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 25px;
-    }
-
-    .Experience .Skills, .About-me .profile, .About-me .education 
-    {
-        width: 69%;
-    }
-
-    .ProfileANDEducation p
-    {
-        font-size: 13px;
-        text-align: center;
-    }
-
-    .Skills .skill-row 
-    {
-    font-size: 13px;
-    }
-
-    .projects-card .card 
-    {
-    width: 230px;
-    }
-
-    .contact-info 
-    {
-    width: 83%;
-    }
-
-    .contact-info a 
-    {
-    padding: 0px 9px;
-    }
-
-    .contact {
-    height: 415px;
-    }
-
-    .contact {
-    justify-content: flex-start;
-    height: 276px;
-    padding-top: 34px;
-    }
-
-    .contact-info h3 
-    {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
-    .cta-buttons
-    {
-        margin: 20px auto 30px;
-    }
-
-    .projects-card .card a {
-    margin: 15px 6px;
-    font-size: 13px;
-}
-}
-
-@media (min-width:415px) and (max-width:800px)
-{
-    nav .links li 
-    {
-    font-size: 17px;
-    }
-
-        nav .links ul 
-    {
-    gap: 19px;
-    }
-}
-
-@media (min-width:800px) and (max-width:1000px)
-{
-    .info {
-    width: 40%;
-    }
-
-    .Home img
-    {
-        width: 280px;
-        height: 280px;
-    }
-
-    .contact-info h3 
-    {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-
-} 
