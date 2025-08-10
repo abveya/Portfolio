@@ -67,7 +67,7 @@ nav .links li {
     flex-direction: row;
     justify-content:space-evenly;
     padding-top: 5%;
-    align-items: stretch;
+    align-items:center;
     padding-bottom: 50px;
     margin-top: 80px;
 }
@@ -79,7 +79,7 @@ nav .links li {
     color: #2E2E2E;
 }
 .info p {
-    margin:20px 0px;
+    margin: 1.2em 0;
 }
 .info h1{
     margin: 0px;
@@ -116,7 +116,7 @@ nav .links li {
     color: white;
     border-color: #D63484;
     transform: scale(1.15);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(214, 52, 132, 0.7);
 }
 
 .Experience h1 ,

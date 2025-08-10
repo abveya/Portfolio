@@ -111,7 +111,7 @@
     .contact-info a 
     {
     padding: 0px 9px;
-    font-size: 17px;
+    font-size: 16px;
     }
 
     .contact {
@@ -133,7 +133,7 @@
 
     .cta-buttons
     {
-        margin: 20px auto 30px;
+    margin: 20px auto 30px;
     }
 
     .projects-card .card a {
@@ -143,11 +143,11 @@
 
     .Skills .grid-skills
     {
-        grid-template-columns: auto;
+    grid-template-columns: auto;
     }
 }
 
-@media (min-width:415px) and (max-width:800px)
+@media (min-width:415px) and (max-width:865px)
 {
     nav .links li 
     {
@@ -158,9 +158,15 @@
     {
     gap: 19px;
     }
+
+    .btn
+    {
+        font-size: 10px;
+        margin-right: 6px;
+    }
 }
 
-@media (min-width:800px) and (max-width:1000px)
+@media (min-width:865px) and (max-width:1150px)
 {
     .info {
     width: 40%;
