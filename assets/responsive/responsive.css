@@ -145,6 +145,16 @@
     {
     grid-template-columns: auto;
     }
+
+    .projects-card .card h2
+    {
+        font-size: 22px;
+    }
+
+    .projects-card .card p
+    {
+        font-size: 14px;
+    }
 }
 
 @media (min-width:415px) and (max-width:865px)

@@ -80,16 +80,18 @@ nav .links li {
 }
 .info p {
     margin: 1.2em 0;
+    color: #630023;
 }
 .info h1{
     margin: 0px;
     font-size: 35px;
+    color: #630023;
 }
 
 .Home .info i {
     font-size: 18px;
-    color: #2E2E2E;
-    border: 2px solid #2E2E2E;
+    color: #630023;
+    border: 2px solid #630023;
     border-radius: 50%;
     margin: 0px 8px;
     transition: all 0.5s ease;
@@ -161,7 +163,7 @@ nav .links li {
 .About-me .profile:hover,
 .About-me .education:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px  #D63484;
+    box-shadow: 0 4px 12px #d735869c;
 }
 .About-me {
     background-color: #ffebf2;
@@ -185,7 +187,7 @@ nav .links li {
     display: block;
     width: 0;
     height: 3px;
-    background: #2E2E2E;
+    background: #630023;
     margin: 10px auto 0;
     transition: width 0.3s;
     border-radius: 10px;
@@ -207,21 +209,6 @@ nav .links li {
 .Experience {
     padding-bottom: 50px;
 }
-
-/* .Skills h3 {
-    display: flex;
-    justify-content: space-around;
-    font-size: 16px;
-}
-.Skills i {
-    padding-bottom: 30px;
-    padding-right: 15px;
-}
-.Skills .skill-row {
-    display: flex;
-    flex-direction:column;
-    padding-bottom: 20px;
-} */
 
 .Skills .grid-skills {
     display: grid;
@@ -296,7 +283,7 @@ nav .links li {
 }
 .projects-card .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px #ffe1eb;
+    box-shadow: 0 4px 12px  #d735869c;
 }
 
 .projects-card .card img {
@@ -316,7 +303,7 @@ nav .links li {
 {
     font-size: 15px;
     margin-bottom: 25px;
-    color: #630023;
+    color: #63002369;
 }
 
 .contact{
@@ -354,36 +341,12 @@ nav .links li {
 
 .contact-info i {
     padding-right: 10px;
-    color:#a81e61;
+    color:#630023;
 } 
 
 .contact-info:hover {
     background-color: #fce6ed;
     border-radius: 40px;
-}
-
-footer ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-footer ul a {
-    text-decoration: none;
-    color: #000000;
-}
-
-footer li{
-    margin:0px 15px;
-    font-size: 19px;
-    border-radius: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
-}
-
-footer a:hover {
-    color:  #D63484;
-    transition: color 0.3s ease;
 }
 
 .cta-buttons {
